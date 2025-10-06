@@ -24,6 +24,9 @@ $ sudo nano /etc/ssh/sshd_config
 $ sudo service sshd reload
 $ ssh-keygen OR $ ssh-keygen -t ed25519
 $ cd .ssh
+$ ssh-keygen -t rsa -b 4096 -C "jenkins@laptop"
+$ ssh-copy-id gwl@laptop-307
+$ ssh-copy-id $(whoami)@localhost
 
 ============================================================= Install and Configure the SonarQube =============================================================
 ## Update Package Repository and Upgrade Packages
